@@ -16,10 +16,22 @@ html {
 /* global styles */
 a {
   text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 }
 
 h1 {
   font-family: "Poppins", serif;
+}
+
+p {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* mixins */
@@ -68,5 +80,45 @@ header a {
 header a:hover, header a:focus {
   -webkit-box-shadow: 4px 4px 20px rgba(255, 82, 191, 0.2);
           box-shadow: 4px 4px 20px rgba(255, 82, 191, 0.2);
+}
+
+.hero {
+  max-width: 1204px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero p {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.hero a {
+  background: #ff52bf;
+  color: white;
+  font-family: "Open sans", sans-serif;
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #ff52bf;
+  display: inline-block;
+  padding: 1rem 4rem;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero a:hover, .hero a:focus {
+  background: #ff8fd8;
+  border: 1px solid #ff8fd8;
 }
 /*# sourceMappingURL=style.css.map */

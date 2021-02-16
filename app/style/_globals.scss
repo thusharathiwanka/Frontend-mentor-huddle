@@ -15,10 +15,22 @@ html {
 /* global styles */
 a {
   text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 }
 
 h1 {
   font-family: "Poppins", serif;
+}
+
+p {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* mixins */
