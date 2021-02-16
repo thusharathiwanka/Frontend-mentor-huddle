@@ -1,0 +1,54 @@
+/* resetting defaults */
+html {
+  font-size: 100%;
+  color: hsl(192, 100%, 9%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styles */
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+}
+
+/* mixins */
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin body-margin {
+  max-width: 1204px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@mixin button {
+  background: hsl(322, 100%, 66%);
+  color: white;
+  font-family: "Open sans", sans-serif;
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid hsl(322, 100%, 66%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
