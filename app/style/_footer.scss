@@ -1,0 +1,99 @@
+footer {
+  color: white;
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  form {
+    padding-top: 1.5rem;
+  }
+
+  button {
+    @include cta;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    margin-left: 2rem;
+  }
+
+  input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+  }
+}
+
+.footer-content {
+  position: relative;
+  background: hsl(192, 100%, 9%);
+  margin-top: 10rem;
+  padding: 5rem 4rem 2rem 4rem;
+  @include flex;
+  align-items: flex-start;
+
+  svg path {
+    fill: white;
+  }
+}
+
+.footer-about,
+.newsletter {
+  max-width: 24rem;
+}
+
+.about {
+  padding: 1.5rem 0;
+}
+
+.phone,
+.email {
+  @include flex;
+  justify-content: flex-start;
+  min-height: 2vh;
+}
+
+.email {
+  padding-bottom: 1.5rem;
+}
+
+.phone {
+  padding-bottom: 0.5rem;
+}
+
+.phone img,
+.email img {
+  padding-right: 2rem;
+}
+
+.newsletter {
+  display: inline-block;
+}
+
+.footer-top {
+  top: -33%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: hsl(192, 100%, 9%);
+  padding-bottom: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+i {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #08cbfe;
+  }
+}

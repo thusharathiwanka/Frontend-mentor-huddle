@@ -1,5 +1,4 @@
 .hero {
-  @include body-margin;
   text-align: center;
   padding-top: 7rem;
 
@@ -15,18 +14,24 @@
   }
 
   a {
-    @include button;
-    display: inline-block;
-    padding: 1rem 4rem;
-    margin-bottom: 5rem;
-    font-weight: 600;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
+    @include cta;
+  }
+}
 
-    &:hover,
-    &:focus {
-      background: hsl(321, 100%, 78%);
-      border: 1px solid hsl(321, 100%, 78%);
-    }
+.stats-content {
+  @include flex;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+
+  img {
+    float: left;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    color: hsl(197, 4%, 65%);
   }
 }

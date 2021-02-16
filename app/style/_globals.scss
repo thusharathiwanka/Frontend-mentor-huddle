@@ -12,27 +12,6 @@ html {
   box-sizing: border-box;
 }
 
-/* global styles */
-a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  text-transform: capitalize;
-}
-
-h1 {
-  font-family: "Poppins", serif;
-}
-
-p {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
-}
-
-.img-content img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* mixins */
 @mixin flex {
   display: flex;
@@ -54,13 +33,58 @@ p {
   padding: 0.4rem 1.5rem;
   border-radius: 20px;
   border: 1px solid hsl(322, 100%, 66%);
+  cursor: pointer;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+@mixin cta {
+  @include button;
+  display: inline-block;
+  padding: 1rem 4rem;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+  }
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+/* global styles */
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+h1,
+h3 {
+  font-family: "Poppins", serif;
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+section h1 {
+  font-size: 2rem;
+}
+
+header,
+main,
+footer {
+  @include body-margin;
 }

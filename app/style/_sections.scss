@@ -1,0 +1,62 @@
+.grow,
+.flowing,
+.users {
+  position: relative;
+  margin-top: 10rem;
+}
+
+.flowing {
+  min-height: 50vh;
+}
+
+.grow-content,
+.flowing-content,
+.users-content {
+  @include flex;
+  padding: 0 4rem;
+  background: #f6fbff;
+}
+
+.flowing-content {
+  background: white;
+}
+
+.text-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.img-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.top {
+  top: -30%;
+  left: 0%;
+}
+
+.bottom {
+  bottom: -25%;
+  right: 0%;
+}
+
+.question {
+  margin-top: 12rem;
+  text-align: center;
+  min-height: 25vh;
+
+  a {
+    @include cta;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
