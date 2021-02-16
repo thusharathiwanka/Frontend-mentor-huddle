@@ -23,7 +23,6 @@ html {
 @mixin body-margin {
   max-width: 1204px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 @mixin button {
@@ -74,7 +73,8 @@ p {
   font-weight: 400;
 }
 
-.img-content img {
+.img-content img,
+footer-about img {
   max-width: 100%;
   height: auto;
 }
@@ -87,4 +87,18 @@ header,
 main,
 footer {
   @include body-margin;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+
+  header img {
+    width: 10rem;
+  }
+
+  .stats-content {
+    flex-direction: column;
+  }
 }

@@ -21,13 +21,10 @@
   background: white;
 }
 
-.text-content {
-  flex: 1;
-  padding: 2rem;
-}
-
+.text-content,
 .img-content {
   flex: 1;
+  flex-basis: 20rem;
   padding: 2rem;
 }
 
@@ -58,5 +55,20 @@
 
   h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .background {
+    display: none;
+    pointer-events: none;
+  }
+
+  .grow-content,
+  .flowing-content,
+  .users-content {
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
   }
 }

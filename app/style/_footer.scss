@@ -97,3 +97,41 @@ i {
     color: #08cbfe;
   }
 }
+
+@media screen and (max-width: 1120px) {
+  .footer-content .background {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .footer-content,
+  .phone,
+  .email {
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer h3 {
+    padding-top: 2rem;
+  }
+
+  footer i:nth-child(3) {
+    padding-right: 0;
+  }
+
+  footer button {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  footer input {
+    margin-bottom: 2rem;
+  }
+
+  footer button {
+    margin: 0 2rem;
+  }
+}
