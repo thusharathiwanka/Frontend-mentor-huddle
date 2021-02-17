@@ -448,12 +448,9 @@ i:hover, i:focus {
   }
 }
 
-@media screen and (max-width: 394px) {
-  footer input {
-    margin-bottom: 2rem;
-  }
+@media screen and (max-width: 395px) {
   footer button {
-    margin: 0 2rem;
+    margin: 2rem 2rem 0 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
